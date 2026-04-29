@@ -24,9 +24,9 @@ Compositions:
 | Composition | Icon | Background | Border |
 | --- | --- | --- | --- |
 | `brand` | `#5E63E5` / `--placer-purple` | `#DEE6FD` / `--placer-purple-tint-100` | |
-| `yellow` | `#B05420` / `--seq-5` | `#FFF3D6` / `--seq-1` | |
-| `coral` | `#B12B2B` / `--div-redpur-7-1` | `#F9DDDA` / `--seq-pinkpur-6-1` | |
-| `teal` | `#00585A` / `--div-purteal-7-7` | `#D1EEEA` / `--seq-teal-6-1` | |
+| `yellow` | `#FFBE5E` / `--placer-yellow` | `#FFF3D6` / `--seq-1` | |
+| `coral` | `#CA562C` / `--div-1` | `#FDE0E0` / coral tint | |
+| `teal` | `#007F80` / `--div-7` | `#D1EEEA` / `--seq-teal-6-1` | |
 | `dark` | `#FFFFFF` | `#333333` / `--placer-black` | |
 | `outline` | `#333333` / `--placer-black` | `#FFFFFF` | `#E5E5E5` / `--placer-border-default` |
 

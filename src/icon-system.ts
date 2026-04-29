@@ -40,28 +40,28 @@ export const COMPOSITION_SPECS: Record<Composition, CompositionSpec> = {
   },
   yellow: {
     label: "Yellow",
-    icon: "#B05420",
+    icon: "#FFBE5E",
     background: "#FFF3D6",
     tokens: {
-      icon: "--seq-5",
+      icon: "--placer-yellow",
       background: "--seq-1"
     }
   },
   coral: {
     label: "Coral",
-    icon: "#B12B2B",
-    background: "#F9DDDA",
+    icon: "#CA562C",
+    background: "#FDE0E0",
     tokens: {
-      icon: "--div-redpur-7-1",
-      background: "--seq-pinkpur-6-1"
+      icon: "--div-1",
+      background: "coral tint"
     }
   },
   teal: {
     label: "Teal",
-    icon: "#00585A",
+    icon: "#007F80",
     background: "#D1EEEA",
     tokens: {
-      icon: "--div-purteal-7-7",
+      icon: "--div-7",
       background: "--seq-teal-6-1"
     }
   },
@@ -179,7 +179,7 @@ export function buildTileSvg(options: {
   const svg = [
     `<svg xmlns="http://www.w3.org/2000/svg" width="${tileSize}" height="${tileSize}" viewBox="0 0 ${tileSize} ${tileSize}" role="img" aria-label="${escapeXml(icon.name)} icon">`,
     `  <rect width="${tileSize}" height="${tileSize}" rx="${radius}" fill="${composition.background}"${border}/>`,
-    `  <g color="${composition.icon}" transform="translate(${round(offset)} ${round(offset)}) scale(${round(scale)})">`,
+    `  <g fill="currentColor" color="${composition.icon}" transform="translate(${round(offset)} ${round(offset)}) scale(${round(scale)})">`,
     indent(innerSvg, 4),
     "  </g>",
     "</svg>"
@@ -223,7 +223,7 @@ export function buildIconOnlySvg(options: {
   const size = SIZE_ALIASES[options.size];
   const innerSvg = readPhosphorInnerSvg(icon.slug, options.weight);
   const svg = [
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 256 256" color="${composition.icon}" role="img" aria-label="${escapeXml(icon.name)} icon">`,
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 256 256" fill="currentColor" color="${composition.icon}" role="img" aria-label="${escapeXml(icon.name)} icon">`,
     indent(innerSvg, 2),
     "</svg>"
   ].join("\n");
