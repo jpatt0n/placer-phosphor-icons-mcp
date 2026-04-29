@@ -5,7 +5,8 @@
   "type": "module",
   "main": "dist/server.js",
   "bin": {
-    "placer-phosphor-icons-mcp": "dist/server.js"
+    "placer-phosphor-icons-mcp": "dist/server.js",
+    "placer-icons-install-claude-desktop": "dist/install-claude-desktop.js"
   },
   "files": [
     "dist",
