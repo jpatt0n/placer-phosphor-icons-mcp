@@ -1,0 +1,40 @@
+{
+  "name": "@jpatt0n/placer-phosphor-icons-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Placer-branded Phosphor icon SVGs.",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "placer-phosphor-icons-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/server.ts",
+    "prepack": "npm run build",
+    "smoke": "npm run build && tsx scripts/smoke-test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "claude-code",
+    "phosphor",
+    "icons"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@phosphor-icons/core": "^2.1.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

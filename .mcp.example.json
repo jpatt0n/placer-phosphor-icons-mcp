@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "placer-icons": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${PLACER_ICONS_MCP_PATH}/dist/server.js"]
+    }
+  }
+}
