@@ -61,7 +61,7 @@ claude mcp add --transport stdio --scope user placer-icons -- node "/Users/james
 Run the installer command, then fully quit and reopen Claude Desktop:
 
 ```bash
-npx -y github:jpatt0n/placer-phosphor-icons-mcp placer-icons-install-claude-desktop
+npx --yes --package github:jpatt0n/placer-phosphor-icons-mcp placer-icons-install-claude-desktop
 ```
 
 The installer preserves your existing Claude Desktop preferences and MCP servers, and adds this entry to `~/Library/Application Support/Claude/claude_desktop_config.json`:
